@@ -68,7 +68,7 @@ const server = http.createServer((req, res) => {
     // palindrome API
     else if (page == '/api') {
 
-        if ('palindrome' in params) {
+        if ('palindrome' in params) {    
 
             const userInput = params['palindrome'];
             const inputCleaned = userInput.replace(/[^a-zA-Z0-9]/g, '').toLowerCase(); // using this for edge cases, like spaces or characters other than letters and numbers to be removed and uppercase letters

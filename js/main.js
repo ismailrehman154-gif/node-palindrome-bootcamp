@@ -9,6 +9,6 @@ function checkPalindrome() {
     fetch(`/api?palindrome=${input.value}`)
         .then(response => response.json())
         .then(data => {
-            result.textContent = data.isPalindrome ? 'Yes, it is a palindrome!' : 'No, it is not a palindrome.';
+            result.textContent = data.isPalindrome ? 'CERTIFIED PALINDROME' : 'nope, not a palindrome :(';
         });
 }
