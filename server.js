@@ -95,6 +95,6 @@ const server = http.createServer((req, res) => {
     }
 });
 
-server.listen(8050, () => {
+server.listen(process.env.PORT || 8050, () => {
     console.log('Server is running on port 8050');
 });
